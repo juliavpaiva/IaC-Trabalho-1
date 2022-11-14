@@ -4,12 +4,12 @@ data "aws_ami" "ubuntu" {
   name_regex  = "Ubuntu"
 }
 
-resource "aws_instance" "web" {
+resource "aws_instance" "server01" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = var.aws_instance_type
 
   tags = {
-    Name = "${var.aws_env}: EC2"
+    Name = "${var.aws_env}:Server01"
     Env  = var.aws_env
     Type = var.aws_instance_type
   }
