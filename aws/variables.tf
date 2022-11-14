@@ -15,7 +15,7 @@ variable "aws_bucket_name" {
 
 variable "aws_env" {
   description = "Environment name"
-  default     = "prod"
+  default     = "dev"
 }
 
 variable "aws_server_ami" {
