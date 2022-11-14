@@ -1,29 +1,34 @@
-variable "region" {
+variable "aws_region" {
   description = "Deployed region definition"
   default     = "us-east-1"
 }
 
-variable "name" {
+variable "aws_server_name" {
   description = "Application name"
   default     = "server01"
 }
 
-variable "env" {
+variable "aws_bucket_name" {
+  description = "Application name"
+  default     = "bucket01"
+}
+
+variable "aws_env" {
   description = "Environment name"
   default     = "prod"
 }
 
-variable "ami" {
+variable "aws_server_ami" {
   description = "Desired AWS AMI"
   default     = "ami-08c40ec9ead489470"
 }
 
-variable "instance_type" {
+variable "aws_instance_type" {
   description = "EC2 Hardware configuration"
   default     = "t2.micro"
 }
 
-variable "repo" {
+variable "aws_repo" {
   description = "Appplication repository"
   default     = "https://github.com/juliavpaiva/IaC-Trabalho-1"
 }

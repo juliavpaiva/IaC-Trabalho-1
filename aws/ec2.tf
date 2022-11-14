@@ -1,11 +1,11 @@
 resource "aws_instance" "server01" {
-  ami           = var.ami
-  instance_type = var.instance_type
+  ami           = var.aws_server_ami
+  instance_type = var.aws_instance_type
 
   tags = {
-    Name        = var.name
-    Environment = var.env
+    Name        = var.aws_server_name
+    Environment = var.aws_env
     Provisioner = "Terraform"
-    Repository  = var.source
+    Repository  = var.aws_repo
   }
 }
