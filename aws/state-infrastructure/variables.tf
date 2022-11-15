@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "aws_bucket_name" {
   description = "Application name"
-  default     = "bucket01"
+  default     = "bucket01-IaC-trabalho-1"
 }
 
 variable "aws_env" {

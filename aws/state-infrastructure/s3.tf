@@ -1,5 +1,5 @@
-resource "aws_s3_bucket" "bucket01" {
-  bucket = "bucket01"
+resource "aws_s3_bucket" "bucket01-IaC-trabalho-1" {
+  bucket = var.aws_bucket_name
   acl    = "private"
 
   tags = {
