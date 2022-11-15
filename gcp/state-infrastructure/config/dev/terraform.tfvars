@@ -1,4 +1,5 @@
 google_region      = "us-central1"
+google_zone        = "us-central1-c"
 google_network     = "default"
 google_bucket_name = "bucket-02-iac-trabalho-1"
 storage_class      = "REGIONAL"

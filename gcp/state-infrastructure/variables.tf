@@ -3,6 +3,11 @@ variable "google_region" {
   default     = "us-central1"
 }
 
+variable "google_zone" {
+  description = "Availability zone"
+  default     = "us-central1-c"
+}
+
 variable "google_network" {
   description = "VM network"
   default     = "default"
