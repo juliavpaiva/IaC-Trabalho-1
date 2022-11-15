@@ -1,4 +1,4 @@
-name: Apply terraform resources for AWS Main Infrastructure
+name: AWS - Apply terraform resources for Main Infrastructure
 
 on:
   push:

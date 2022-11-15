@@ -18,7 +18,7 @@ variable "google_bucket_name" {
   default     = "bucket-02-iac-trabalho-1"
 }
 
-variable "storage_class" {
+variable "google_storage_class" {
   description = "Bucket storage class"
   default     = "REGIONAL"
 }

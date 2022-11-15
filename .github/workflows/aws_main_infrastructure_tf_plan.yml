@@ -1,4 +1,4 @@
-name: Create terraform plan for Main Infrastructure
+name: AWS - Create terraform plan for Main Infrastructure
 
 on:
   pull_request:

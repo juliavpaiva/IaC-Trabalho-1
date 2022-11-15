@@ -1,10 +1,10 @@
-name: Create terraform plan and apply for GCP State Infrastructure
+name: GCP - Create terraform plan and apply for State Infrastructure
 
 on:
   workflow_dispatch:
     inputs:
       dir:
-        description: 'Create terraform plan and apply for GCP State Infrastructure'
+        description: 'GCP - Create terraform plan and apply for State Infrastructure'
         required: true
         default: 'gcp/state-infrastructure'
 

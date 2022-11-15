@@ -1,10 +1,10 @@
-name: Create terraform plan and apply for State Infrastructure
+name: AWS - Create terraform plan and apply for State Infrastructure
 
 on:
   workflow_dispatch:
     inputs:
       dir:
-        description: 'Create terraform plan and apply for State Infrastructure'
+        description: 'AWS - Create terraform plan and apply for State Infrastructure'
         required: true
         default: 'aws/state-infrastructure'
 

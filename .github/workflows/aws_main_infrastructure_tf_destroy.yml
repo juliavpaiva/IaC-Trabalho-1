@@ -1,10 +1,10 @@
-name: Destroy terraform AWS Main Infrastructure Resources
+name: AWS - Destroy terraform Main Infrastructure Resources
 
 on:
   workflow_dispatch:
     inputs:
       dir:
-        description: 'Destroy terraform AWS Main Infrastructure Resources'
+        description: 'AWS - Destroy terraform Main Infrastructure Resources'
         required: true
         default: 'aws/main-infrastructure'
 
