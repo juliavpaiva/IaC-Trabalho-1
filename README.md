@@ -57,6 +57,13 @@ This will start the plan workflow, check the following examples for further info
 #### GCP
 [Check this successfully merged request job execution](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/runs/3474088703/jobs/5806856118)
 
+- You can Log In at the VM through SSH to verify if packages were installed
+```
+julia@server02:~$ apache2 -version
+Server version: Apache/2.4.29 (Ubuntu)
+Server built:   2022-06-23T12:51:37
+```
+
 (Be aware that this code is considering that you are using a existing project used to create the credentials)
 -----
 
