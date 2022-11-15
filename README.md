@@ -15,3 +15,16 @@
 - Run the workflow
 
 [Check this successful run for further information](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/runs/3470388420)
+
+### Step 2: Open pull request to initiate the plan workflow
+- Update code
+- Create branch
+- Commit and push changes
+- Open pull request
+
+This will start the plan workflow, check the following example for further information:
+- [Pull Request](https://github.com/juliavpaiva/IaC-Trabalho-1/pull/1)
+- [Plan workflow run](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/runs/3470724739/jobs/5799287166)
+
+### Step 3: Merge the opened pull request to initiate the apply worflow
+- At the previously opened pull request, click at the `Merge pull request` button
