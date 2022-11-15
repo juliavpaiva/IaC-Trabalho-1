@@ -8,9 +8,6 @@ on:
         required: true
         default: 'gcp/state-infrastructure'
 
-env:
-  credentials: ${{ secrets.GCP_CREDENTIALS }}
-
 jobs:
   plan-dev:
     name: 'terraform plan dev'
@@ -24,6 +21,12 @@ jobs:
         working-directory: ${{ env.TF_WORKING_DIR }}
 
     steps:
+      - name: GCP Auth
+      - id: 'auth'
+        uses: 'google-github-actions/auth@v1'
+        with:
+         credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
+
       - name: Checkout
         uses: actions/checkout@v2
 
