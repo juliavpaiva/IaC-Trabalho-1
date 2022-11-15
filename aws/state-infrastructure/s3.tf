@@ -1,4 +1,4 @@
-resource "aws_s3_bucket_acl" "bucket01" {
+resource "aws_s3_bucket" "bucket01" {
   bucket = "bucket01"
   acl    = "private"
 
