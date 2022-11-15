@@ -1,5 +1,5 @@
 resource "google_compute_instance" "server02" {
-  name         = "server02"
+  name         = "server02-${var.aws_env}"
   machine_type = var.google_machine_type
 
   boot_disk {
@@ -16,7 +16,7 @@ resource "google_compute_instance" "server02" {
 }
 
 resource "google_compute_instance" "server03" {
-  name         = "server03"
+  name         = "server03-${var.aws_env}"
   machine_type = var.google_machine_type
 
   boot_disk {
