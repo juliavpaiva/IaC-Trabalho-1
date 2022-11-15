@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "aws_server_name" {
   description = "Application name"
-  default     = "server01"
+  default     = "Server01"
 }
 
 variable "aws_env" {
