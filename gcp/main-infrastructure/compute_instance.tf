@@ -6,7 +6,9 @@ resource "google_compute_instance" "server02" {
     initialize_params {
       image = var.google_image
     }
-  }
+  }  
+  
+  metadata_startup_script = file("./apache2.sh")
 
   network_interface {
     network = var.google_network
