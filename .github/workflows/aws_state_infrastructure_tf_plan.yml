@@ -1,9 +1,12 @@
 name: Create terraform plan for State Infrastructure
 
 on:
-  pull_request:
-    paths:
-      - 'aws/state-infrastructure/**'
+  workflow_dispatch:
+    inputs:
+      dir:
+        description: 'Create terraform plan for State Infrastructure'
+        required: true
+        default: 'aws/state-infrastructure'
 
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
