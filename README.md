@@ -32,3 +32,7 @@ This will start the plan workflow, check the following example for further infor
 [Check this successfully merged request job execution](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/runs/3470944698)
 
 (Be aware that Terraform will use the default VCP that comes with your account when you first activate it)
+
+### Step 4: Check created resorces at console
+- Access the AWS Console and check your new EC2 instance
+- At the AWS Console, access S3 and check for the new folder containing the terraform state
