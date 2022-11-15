@@ -30,6 +30,12 @@ jobs:
         with:
          credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
 
+      - name: 'Set up Cloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v1'
+
+      - name: 'Use gcloud CLI'
+        run: 'gcloud info'
+
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
         with:
