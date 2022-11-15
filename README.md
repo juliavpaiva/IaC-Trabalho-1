@@ -13,12 +13,17 @@
 ### Step 1: Create bucket to store terraform state
 - Go to Actions tab
 - For AWS:
-    - Select 'Create terraform plan and apply for State Infrastructure'
+    - Select ['AWS - Create terraform plan and apply for State Infrastructure'](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/workflows/aws_state_infrastructure_tf_apply.yml)
+- For GCP:
+    - Select ['GCP - Create terraform plan and apply for State Infrastructure'](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/workflows/gcp_state_infrastructure_tf_apply.yml)
 - Click at the dropdown 'Run workflow' on the left side of the table
 - Run the workflow
 
 #### AWS
 [Check this successful run for further information](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/runs/3470388420)
+
+#### GPC
+[Check this successful run for further information](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/runs/3473674643/jobs/5805956836)
     
 -----
 
