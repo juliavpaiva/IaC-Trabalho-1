@@ -9,7 +9,7 @@ resource "aws_instance" "server01" {
   instance_type = var.aws_instance_type
 
   tags = {
-    Name = "${var.aws_env}:Server01"
+    Name = "Server01-${var.aws_env}"
     Env  = var.aws_env
     Type = var.aws_instance_type
   }
