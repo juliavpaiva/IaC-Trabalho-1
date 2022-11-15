@@ -7,6 +7,7 @@
 - The following will be needed:
     - AWS_ACCESS_KEY_ID
     - AWS_SECRET_ACCESS_KEY
+    - GOOGLE_CREDENTIALS
 
 -----
 
