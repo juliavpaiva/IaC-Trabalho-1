@@ -23,7 +23,7 @@
 - Open pull request
 
 This will start the plan workflow, check the following example for further information:
-- [Pull Request](hhttps://github.com/juliavpaiva/IaC-Trabalho-1/pull/2)
+- [Pull Request](https://github.com/juliavpaiva/IaC-Trabalho-1/pull/2)
 - [Plan workflow run](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/runs/3470937067/jobs/5799770540)
 
 ### Step 3: Merge the opened pull request to initiate the apply worflow
