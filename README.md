@@ -65,6 +65,7 @@ Server built:   2022-06-23T12:51:37
 ```
 
 (Be aware that this code is considering that you are using a existing project used to create the credentials)
+
 -----
 
 ### Step 4: Check created resorces at console
