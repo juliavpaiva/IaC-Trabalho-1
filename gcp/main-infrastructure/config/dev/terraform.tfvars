@@ -1,0 +1,5 @@
+google_region       = "us-central1"
+google_zone         = "us-central1-c"
+google_network      = "default"
+google_machine_type = "e2-small"
+google_image        = "ubuntu-os-cloud/ubuntu-1804-lts"

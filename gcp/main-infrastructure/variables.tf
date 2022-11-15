@@ -10,25 +10,15 @@ variable "google_zone" {
 
 variable "google_machine_type" {
   description = "Machine type for VM"
-  default     = "e2-micro"
+  default     = "e2-small"
 }
 
 variable "google_image" {
   description = "VM OS image"
-  default     = "debian-cloud/debian-11"
+  default     = "ubuntu-os-cloud/ubuntu-1804-lts"
 }
 
 variable "google_network" {
   description = "VM network"
   default     = "default"
-}
-
-variable "google_bucket_name" {
-  description = "Bucket name"
-  default     = "bucket02"
-}
-
-variable "storage_class" {
-  description = "Bucket storage class"
-  default     = "REGIONAL"
 }
