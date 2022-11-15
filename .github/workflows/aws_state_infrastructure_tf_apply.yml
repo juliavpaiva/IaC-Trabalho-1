@@ -1,10 +1,10 @@
-name: Create terraform plan for State Infrastructure
+name: Create terraform plan and apply for State Infrastructure
 
 on:
   workflow_dispatch:
     inputs:
       dir:
-        description: 'Create terraform plan for State Infrastructure'
+        description: 'Create terraform plan and apply for State Infrastructure'
         required: true
         default: 'aws/state-infrastructure'
 
@@ -48,3 +48,7 @@ jobs:
       - name: Terraform Plan
         id: plandev
         run: terraform plan -no-color -var-file="config/dev/terraform.tfvars"
+
+      - name: Terraform Apply
+        id: applydev
+        run: terraform apply
