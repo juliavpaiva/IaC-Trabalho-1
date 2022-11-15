@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "bucket01-IaC-trabalho-1" {
+resource "aws_s3_bucket" "bucket01IaCtrabalho1" {
   bucket = var.aws_bucket_name
   acl    = "private"
 
