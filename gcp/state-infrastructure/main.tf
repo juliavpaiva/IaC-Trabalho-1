@@ -11,8 +11,8 @@ terraform {
 }
 
 provider "google" {
-  region  = var.google_region
-  zone    = var.google_zone
+  region = var.google_region
+  zone   = var.google_zone
 
   default_tags {
     tags = {
