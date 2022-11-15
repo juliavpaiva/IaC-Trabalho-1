@@ -13,12 +13,4 @@ terraform {
 provider "google" {
   region = var.google_region
   zone   = var.google_zone
-
-  default_tags {
-    tags = {
-      Project   = "IaC Trabalho 1"
-      ManagedBy = "Terraform"
-      Owner     = "Julia Paiva"
-    }
-  }
 }
