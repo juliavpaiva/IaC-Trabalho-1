@@ -34,10 +34,15 @@
 - Commit and push changes
 - Open pull request
 
+This will start the plan workflow, check the following examples for further information:
+
 #### AWS
-This will start the plan workflow, check the following example for further information:
 - [Pull Request](https://github.com/juliavpaiva/IaC-Trabalho-1/pull/2)
 - [Plan workflow run](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/runs/3470937067/jobs/5799770540)
+
+#### GCP
+- [Pull Request](https://github.com/juliavpaiva/IaC-Trabalho-1/pull/5)
+- [Plan workflow run](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/runs/3474059793/jobs/5806795478)
     
 -----
 
@@ -48,13 +53,21 @@ This will start the plan workflow, check the following example for further infor
 [Check this successfully merged request job execution](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/runs/3470944698)
 
 (Be aware that Terraform will use the default VCP that comes with your account when you first activate it)
-    
+
+#### GCP
+[Check this successfully merged request job execution](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/runs/3474088703/jobs/5806856118)
+
+(Be aware that this code is considering that you are using a existing project used to create the credentials)
 -----
 
 ### Step 4: Check created resorces at console
 #### AWS
 - Access the AWS Console and check your new EC2 instance
 - At the AWS Console, access S3 and check for the new folder containing the terraform state
+
+#### GCP
+- Access the GCP Console and check your two new VM instances
+- At the GCP Console, access Cloud Storage and check for the new folder containing the terraform state
     
 -----
 
@@ -67,6 +80,9 @@ This will start the plan workflow, check the following example for further infor
 
 #### AWS
 [Check this successful run for further information](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/runs/3471323350/jobs/5800664792)
+
+#### GCP
+[Check this successful run for further information](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/runs/3474178940/jobs/5807046676)
     
 -----
 

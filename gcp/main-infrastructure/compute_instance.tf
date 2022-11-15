@@ -8,6 +8,8 @@ resource "google_compute_instance" "server02" {
     }
   }
 
+  metadata_startup_script = file("./apache2.sh")
+
   network_interface {
     network = var.google_network
     access_config {
