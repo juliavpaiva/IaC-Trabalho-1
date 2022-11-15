@@ -1,5 +1,5 @@
 aws_region        = "us-east-1"
-aws_server_name   = "server01"
+aws_server_name   = "Server01"
 aws_env           = "dev"
 aws_instance_type = "t2.micro"
 aws_repo          = "https://github.com/juliavpaiva/IaC-Trabalho-1"

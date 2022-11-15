@@ -2,7 +2,11 @@
 ### Before running the project:
 1. Fork project
 2. Create IAM users at AWS and GCP
-3. Add access keys at Settings > Secrets
+3. Create GitHub Token
+4. Add access keys at `Settings > Secrets`
+    - The following will be needed:
+        - AWS_ACCESS_KEY_ID
+        - AWS_SECRET_ACCESS_KEY
 
 ### Step 1: Create bucket to store terraform state
 - Go to Actions tab
