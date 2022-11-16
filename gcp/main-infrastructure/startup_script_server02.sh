@@ -1,6 +1,5 @@
 #!/bin/bash
-
-sudo apt-get update
+sudo apt update && sudo apt upgrade
 
 # Install Apache2
 sudo apt -y install apache2
@@ -9,6 +8,9 @@ sudo apt -y install apache2
 sudo apt install mysql-server
 
 # Install PHP
-sudo apt-get install apache2 php libapache2-mod-php
-sudo apt-get install php-soap php-xml php-curl php-opcache php-gd 
-php-sqlite3 php-mbstring
+sudo apt install software-properties-common ca-certificates lsb-release apt-transport-https 
+
+LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php 
+sudo apt update 
+sudo apt install php8.1 
+sudo apt install php8.1-mysql php8.1-mbstring php8.1-xml php8.1-curl
