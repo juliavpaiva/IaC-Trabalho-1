@@ -59,9 +59,26 @@ This will start the plan workflow, check the following examples for further info
 
 - You can Log In at the VM through SSH to verify if packages were installed
 ```
-julia@server02:~$ apache2 -version
-Server version: Apache/2.4.29 (Ubuntu)
-Server built:   2022-06-23T12:51:37
+julia@server02:~$ systemctl status apache2.service
+● apache2.service - The Apache HTTP Server
+   Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+  Drop-In: /lib/systemd/system/apache2.service.d
+           └─apache2-systemd.conf
+   Active: active (running) since Wed 2022-11-16 23:33:07 UTC; 12s ago
+  Process: 25250 ExecStop=/usr/sbin/apachectl stop (code=exited, status=0/SUCCESS)
+  Process: 25255 ExecStart=/usr/sbin/apachectl start (code=exited, status=0/SUCCESS)
+ Main PID: 25278 (apache2)
+    Tasks: 6 (limit: 2322)
+   CGroup: /system.slice/apache2.service
+           ├─25278 /usr/sbin/apache2 -k start
+           ├─25283 /usr/sbin/apache2 -k start
+           ├─25284 /usr/sbin/apache2 -k start
+           ├─25285 /usr/sbin/apache2 -k start
+           ├─25287 /usr/sbin/apache2 -k start
+           └─25289 /usr/sbin/apache2 -k start
+
+Nov 16 23:33:07 server02 systemd[1]: Starting The Apache HTTP Server...
+Nov 16 23:33:07 server02 systemd[1]: Started The Apache HTTP Server.
 ```
 
 (Be aware that this code is considering that you are using a existing project used to create the credentials)
