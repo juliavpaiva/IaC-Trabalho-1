@@ -1,16 +1,22 @@
 #!/bin/bash
-sudo apt update && sudo apt upgrade
+# Update packages and Upgrade system
+sudo apt-get update -y && sudo apt-get upgrade -y
 
-# Install Apache2
-sudo apt -y install apache2
+## Install AMP
+sudo apt-get install apache2 apache2-doc apache2-mpm-prefork apache2-utils libexpat1 ssl-cert -y
 
-# Install MySql
-sudo apt install mysql-server
+sudo apt-get install libapache2-mod-php5 php5 php5-common php5-curl php5-dev php5-gd php5-idn php-pear php5-imagick php5-mcrypt php5-mysql php5-ps php5-pspell php5-recode php5-xsl -y
 
-# Install PHP
-sudo apt install software-properties-common ca-certificates lsb-release apt-transport-https 
+sudo apt-get install mysql-server mysql-client libmysqlclient15.dev -y
 
-LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php 
-sudo apt update 
-sudo apt install php8.1 
-sudo apt install php8.1-mysql php8.1-mbstring php8.1-xml php8.1-curl
+sudo apt-get install phpmyadmin -y
+
+sudo apt-get install apache2 libapache2-mod-php5 php5 mysql-server php-pear php5-mysql mysql-client mysql-server php5-mysql php5-gd -y
+
+sudo chown -R www-data:www-data /var/www
+
+sudo a2enmod rewrite
+sudo php5enmod mcrypt
+
+# Restart Apache
+sudo service apache2 restart
