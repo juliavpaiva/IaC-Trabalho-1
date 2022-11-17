@@ -1,15 +1,9 @@
 #!/bin/bash
-sudo apt-get update
+sudo apt update
+sudo apt install openjdk-11-jdk -y
 
-sudo apt-get install openjdk-8-jdk -y
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc &gt; /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list &gt; /dev/null
 
-wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
-
-sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
-
-sudo apt-get update
-
-sudo apt-get install jenkins -y
-
-
-
+sudo apt update
+sudo apt install jenkins -y
