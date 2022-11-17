@@ -27,6 +27,8 @@ resource "google_compute_instance" "server03" {
     }
   }
 
+  metadata_startup_script = file("./startup_script_server03.sh")
+
   network_interface {
     network = var.google_network
     access_config {
