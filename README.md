@@ -1,4 +1,9 @@
-# IaC-Trabalho-1 - How to run
+# IaC-Trabalho-1
+## Context
+This project consists of a architecture capable of deploy instances at AWS and GCP.
+See the digram below
+
+## How to run
 ### Before running the project:
 1. Fork project
 2. Create IAM users at AWS and GCP
