@@ -80,6 +80,28 @@ julia@server02:~$ systemctl status apache2.service
 Nov 16 23:33:07 server02 systemd[1]: Starting The Apache HTTP Server...
 Nov 16 23:33:07 server02 systemd[1]: Started The Apache HTTP Server.
 ```
+---
+```
+julia@server03:~$ service jenkins status
+● jenkins.service - Jenkins Continuous Integration Server
+   Loaded: loaded (/lib/systemd/system/jenkins.service; enabled; vendor preset: enabled)
+   Active: activating (start) since Thu 2022-11-17 00:38:07 UTC; 1min 17s ago
+ Main PID: 8362 (java)
+    Tasks: 50 (limit: 2322)
+   CGroup: /system.slice/jenkins.service
+           └─8362 /usr/bin/java -Djava.awt.headless=true -jar /usr/share/java/jenkins.war --webroot=/var/cache/
+
+Nov 17 00:38:45 server03 jenkins[8362]: WARNING: Please consider reporting this to the maintainers of org.codeh
+Nov 17 00:38:45 server03 jenkins[8362]: WARNING: Use --illegal-access=warn to enable warnings of further illega
+Nov 17 00:38:45 server03 jenkins[8362]: WARNING: All illegal access operations will be denied in a future relea
+Nov 17 00:38:45 server03 jenkins[8362]: 2022-11-17 00:38:45.650+0000 [id=31]        INFO        jenkins.install
+Nov 17 00:38:45 server03 jenkins[8362]: *************************************************************
+Nov 17 00:38:45 server03 jenkins[8362]: Jenkins initial setup is required. An admin user has been created and a
+Nov 17 00:38:45 server03 jenkins[8362]: Please use the following password to proceed to installation:
+Nov 17 00:38:45 server03 jenkins[8362]: e0d9362d2c8e40d6a62e56e75cbb2ff9
+Nov 17 00:38:45 server03 jenkins[8362]: This may also be found at: /var/lib/jenkins/secrets/initialAdminPasswor
+Nov 17 00:38:45 server03 jenkins[8362]: *************************************************************
+```
 
 (Be aware that this code is considering that you are using a existing project used to create the credentials)
 
