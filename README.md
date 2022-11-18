@@ -102,7 +102,7 @@ This will start the plan workflow, check the following examples for further info
 #### GCP
 [Check this successfully merged request job execution](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/runs/3474088703/jobs/5806856118)
 
-- To cerfity that everything wen through, you can Log In at the VM through SSH to see if packages were installed. (This step is not necessary, is only an additional check to prove that the scripts work as expected)
+- To cerfify that everything wen through, you can Log In at the VM through SSH to see if packages were installed. (This step is not necessary, is only an additional check to prove that the scripts work as expected)
 ```
 julia@server02:~$ systemctl status apache2.service
 ● apache2.service - The Apache HTTP Server
