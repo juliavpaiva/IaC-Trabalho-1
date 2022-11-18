@@ -1,7 +1,46 @@
 # IaC-Trabalho-1
 ## Context
 This project consists of a architecture capable of deploy instances at AWS and GCP.
-See the digram below
+See the digram below:
+
+![General View Diagram](images/GeneralView.png)
+
+* Server 01 has RUNDECK installed. [Check the installation script here.](https://github.com/juliavpaiva/IaC-Trabalho-1/blob/main/aws/main-infrastructure/startup_script_server01.sh)
+* Server 02 has Apache, MySQL and PHP Installed. [Check the installation script here.](https://github.com/juliavpaiva/IaC-Trabalho-1/blob/main/gcp/main-infrastructure/startup_script_server02.sh)
+* Server 03 has Jenkins installed. [Check the installation script here.](https://github.com/juliavpaiva/IaC-Trabalho-1/blob/main/gcp/main-infrastructure/startup_script_server03.sh)
+* Buckets are used to store Terraform state for each infra.
+
+## Operational Flow
+
+![General View Diagram](images/Functionality.png)
+
+### Expected flow
+
+1. User goes to Actions tab and manually activates the `State Infrasctructure`:
+
+- Actions trigger `terraform plan` and `terraform apply` creation of buckets
+- Each cloud has its own action workflow, two need to be activated to create both buckets
+- [AWS workflow](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/workflows/aws_state_infrastructure_tf_apply.yml)
+- [GCP workflow](https://github.com/juliavpaiva/IaC-Trabalho-1/actions/workflows/gcp_state_infrastructure_tf_apply.yml)
+        
+2. User pushes code on a branch
+3. User creates pull request:
+- Pull request triggers `terraform plan` for infra that is being updated
+- If GCP infra is updated, plan runs only for GCP
+- If AWS infra is updated, plan runs only for AWS
+- Information is stored at assigned bucket
+
+4. User approves pull request:
+- Pull request triggers `terraform apply` for infra that is being updated
+- Resources are created according to plan stored at the bucket
+- There are two different workflows for the clouds and like the previous step, it is identified by the folder which was altered
+- Information is stored at assigned bucket
+- Resources are created or updated
+
+5. User goes to Actions tab and manually activates the `Destroy Infrasctructure`:
+- Each cloud has its own action workflow, two need to be activated to create destroy all infrastructures
+- Actions trigger `terraform destroy`
+- Servers are deleted
 
 ## How to run
 ### Before running the project:
