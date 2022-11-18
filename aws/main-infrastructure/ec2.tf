@@ -11,7 +11,7 @@ resource "aws_instance" "server01" {
   user_data = file("./startup_script_server01.sh")
 
   tags = {
-    Name = "Server01-${var.aws_env}"
+    Name = "server01"
     Env  = var.aws_env
     Type = var.aws_instance_type
   }
