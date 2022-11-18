@@ -9,6 +9,7 @@ See the digram below:
 * Server 02 has Apache, MySQL and PHP Installed. [Check the installation script here.](https://github.com/juliavpaiva/IaC-Trabalho-1/blob/main/gcp/main-infrastructure/startup_script_server02.sh)
 * Server 03 has Jenkins installed. [Check the installation script here.](https://github.com/juliavpaiva/IaC-Trabalho-1/blob/main/gcp/main-infrastructure/startup_script_server03.sh)
 * Buckets are used to store Terraform state for each infra.
+* Scripts are used to install required tools, such as RUNDECK, jenkins and others.
 
 ## Operational Flow
 
