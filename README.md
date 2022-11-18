@@ -3,7 +3,7 @@
 This project consists of a architecture capable of deploy instances at AWS and GCP.
 See the digram below:
 
-
+![General View Diagram](images/GeneralView.png)
 
 * Server 01 has RUNDECK installed. [Check the installation script here.](https://github.com/juliavpaiva/IaC-Trabalho-1/blob/main/aws/main-infrastructure/startup_script_server01.sh)
 * Server 02 has Apache, MySQL and PHP Installed. [Check the installation script here.](https://github.com/juliavpaiva/IaC-Trabalho-1/blob/main/gcp/main-infrastructure/startup_script_server02.sh)
@@ -13,7 +13,7 @@ See the digram below:
 
 ## Operational Flow
 
-
+![Functionality](images/Functionality.png)
 
 ### Expected flow
 
