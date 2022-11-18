@@ -13,7 +13,7 @@ See the digram below:
 
 ## Operational Flow
 
-![General View Diagram](images/Functionality.png)
+![Functionality](images/Functionality.png)
 
 ### Expected flow
 
